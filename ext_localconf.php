@@ -20,14 +20,3 @@ if (!defined('TYPO3_MODE')) {
         'className' => 'ArminVieweg\PhpexcelService\Service\Phpexcel',
     )
 );
-
-
-/** @var \ArminVieweg\PhpexcelService\Service\Phpexcel $phpExcelService */
-$phpExcelService = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstanceService('phpexcel');
-$phpExcel = $phpExcelService->getPHPExcel();
-
-// Your excel magic goes here...
-
-/** @var \PHPExcel_Writer_Excel2007 $excelWriter */
-$excelWriter = $phpExcelService->getInstanceOf('PHPExcel_Writer_Excel2007', $phpExcel);
-$excelWriter->save('...');
