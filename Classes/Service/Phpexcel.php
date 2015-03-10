@@ -39,7 +39,7 @@ class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
 	 *
 	 * @return \PHPExcel
 	 */
-	public function getPHPExcel() {
+	public function getPhpExcel() {
 		return $this->getInstanceOf('PHPExcel');
 	}
 

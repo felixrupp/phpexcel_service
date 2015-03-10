@@ -27,7 +27,7 @@ Example:
 
 	/** @var \ArminVieweg\PhpexcelService\Service\Phpexcel $phpExcelService */
 	$phpExcelService = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstanceService('phpexcel');
-	$phpExcel = $phpExcelService->getPHPExcel();
+	$phpExcel = $phpExcelService->getPhpExcel();
 
 	// Your excel magic goes here...
 
