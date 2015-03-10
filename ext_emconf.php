@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'title' => 'PHPExcel Library and Service',
 	'description' => 'Provides PHPExcel library and TYPO3 service to use it. PHPExcel is already provided in this extension.',
 	'category' => 'misc',
-	'version' => '1.8.0',
+	'version' => '1.8.1',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
@@ -31,4 +31,3 @@ $EM_CONF[$_EXTKEY] = array(
 		),
 	),
 );
-

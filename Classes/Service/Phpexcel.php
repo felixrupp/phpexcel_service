@@ -26,8 +26,10 @@ namespace ArminVieweg\PhpexcelService\Service;
  ***************************************************************/
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  * Phpexcel Service
+ *
  * @package ArminVieweg\PhpexcelService\Service
  */
 class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
@@ -37,7 +39,7 @@ class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
 	 *
 	 * @return \PHPExcel
 	 */
-	public function getPHPExcel() {
+	public function getPhpExcel() {
 		return $this->getInstanceOf('PHPExcel');
 	}
 
