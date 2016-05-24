@@ -1,3 +1,23 @@
+# Extension obsolete
+
+Please use composer instead to load [PHPExcel](https://packagist.org/packages/phpoffice/phpexcel) to your TYPO3 extension which use it and call their classes nativley.
+
+```
+composer require phpoffice/phpexcel:"^1.8"
+```
+on command line or
+
+```
+{
+    "require": {
+        "phpoffice/phpexcel": "^1.8"
+    }
+}
+```
+in *composer.json*.
+
+
+
 # Extension manual phpexcel_service
 
 phpexcel_service provides the library [PHPExcel](https://phpexcel.codeplex.com) for TYPO3.
