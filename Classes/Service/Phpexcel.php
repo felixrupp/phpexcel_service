@@ -63,7 +63,7 @@ class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
 			$reflectedClass = new \ReflectionClass($className);
 			$instance = $reflectedClass->newInstanceArgs($constructorArguments);
 		} else {
-			$instance = new \PHPExcel();
+			$instance = new $className;
 		}
 		return $instance;
 	}
