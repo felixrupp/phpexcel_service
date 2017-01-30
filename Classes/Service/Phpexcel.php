@@ -40,6 +40,12 @@ class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
 	 * @return \PHPExcel
 	 */
 	public function getPhpExcel() {
+		$libPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('phpexcel_service') . 'Resources/Private/Contributed/';
+		if (!defined('PHPEXCEL_ROOT')) {
+			define('PHPEXCEL_ROOT', $libPath );
+			require(PHPEXCEL_ROOT . 'PHPExcel/Autoloader.php');
+		}
+
 		return $this->getInstanceOf('PHPExcel');
 	}
 
@@ -57,7 +63,7 @@ class Phpexcel extends \TYPO3\CMS\Core\Service\AbstractService {
 			$reflectedClass = new \ReflectionClass($className);
 			$instance = $reflectedClass->newInstanceArgs($constructorArguments);
 		} else {
-			$instance = GeneralUtility::makeInstance($className);
+			$instance = new \PHPExcel();
 		}
 		return $instance;
 	}
