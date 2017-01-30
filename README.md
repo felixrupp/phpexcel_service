@@ -1,27 +1,9 @@
-# Extension obsolete
-
-Please use composer instead to load [PHPExcel](https://packagist.org/packages/phpoffice/phpexcel) to your TYPO3 extension which use it and call their classes nativley.
-
-```
-composer require phpoffice/phpexcel:"^1.8"
-```
-on command line or
-
-```
-{
-    "require": {
-        "phpoffice/phpexcel": "^1.8"
-    }
-}
-```
-in *composer.json*.
-
-
-
 # Extension manual phpexcel_service
 
+Fork of Armin Vieweg's extension for Typo3 7.6.
+
 phpexcel_service provides the library [PHPExcel](https://phpexcel.codeplex.com) for TYPO3.
-This version contains the version 1.8.0 and requires TYPO3 6.0 or greater.
+This version contains the version 1.8.0 and requires TYPO3 7.6.
 
 The [documentation of PHPExcel](https://github.com/PHPOffice/PHPExcel/wiki/User%20Documentation) itself can be found on github.
 
@@ -56,11 +38,3 @@ Example:
 	$excelWriter = $phpExcelService->getInstanceOf('PHPExcel_Writer_Excel2007', $phpExcel);
 	$excelWriter->save('...');
 ```
-
-## Support
-
-Because this extension is just a small wrapper for PHPExcel I have decided to
-create no forge project. If you have questions about this extension (not PHPExcel itself)
-feel free to contact me by mail or [twitter](https://twitter.com/ArminVieweg). You'll find my mail address in ext_emconf.php.
-
-For own purposes I have created a [Bitbucket repository](https://bitbucket.org/ArminVieweg/phpexcel_service) for this extension.
