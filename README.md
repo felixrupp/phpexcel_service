@@ -7,13 +7,6 @@ This version contains the version 1.8.0 and requires TYPO3 7.6.
 
 The [documentation of PHPExcel](https://github.com/PHPOffice/PHPExcel/wiki/User%20Documentation) itself can be found on github.
 
-## Build Status
-
-|master|develop|
-|------|-------|
-|[![dce Master branch](http://ci.v.ieweg.de/build-status/image/6?branch=master)](http://ci.v.ieweg.de/build-status/view/6?branch=master)|[![dce Develop Branch](http://ci.v.ieweg.de/build-status/image/6?branch=develop)](http://ci.v.ieweg.de/build-status/view/6?branch=develop)|
-
-
 ## Installation
 
 In earlier versions of this extension the PHPExcel library itself wasn't shipped
